@@ -6,3 +6,12 @@ dark-blue - #134d71;
 white - #ffffff;
 black - #000000;
 */
+
+body {
+  height: 1000px;
+  background-color: red;
+  background-image:
+    linear-gradient(
+      red, #f06d06
+    );
+}
