@@ -11,4 +11,14 @@ body {
 background-image: linear-gradient(#134d71, #78a7c6, #f7e4bf);
 background-attachment:fixed;
 height:100%;
+font-family: 'Quicksand', sans-serif;
+}
+
+.heading {
+  padding: 60px;
+  text-align: center;
+  background: transparent;
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
 }
