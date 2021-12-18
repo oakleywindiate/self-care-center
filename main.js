@@ -46,3 +46,9 @@ var receiveMessage = document.querySelector('.receive-message');
 affirmation.addEventListener('click', function);
 mantra.addEventListener('click', function);
 receiveMessage.addEventListener('click', function);
+
+// ~~~~~ FUNCTIONS HERE ~~~~~ //
+
+function getRandomIndex(array) {
+  return Math.floor(Math.random() * array.length);
+};
