@@ -27,6 +27,7 @@ margin: auto;
 }
 
 .message-type {
+  postition: absolute;
   padding: 65px;
   text-align: center;
   background: transparent;
@@ -40,9 +41,9 @@ margin: auto;
   width: 500px;
   height: 96px;
   border-radius: 10px;
-  position: absolute;
+  position: fixed;
   left: 50%;
-  top: 38%;
+  top: 35%;
   transform: translate(-50%, -50%);
   margin: auto;
 }
@@ -61,7 +62,7 @@ margin: auto;
   top: 280%;
   border-radius: 10px;
   transform: translate(-50%, -50%);
-  position: absolute;
+  position: fixed;
   margin: auto;
 }
 
@@ -75,4 +76,71 @@ svg {
 align-items: center;
 position: relative;
 top: 40px;
+}
+
+.affirmation-button {
+  position: fixed;
+  left: 37%;
+  top: 31%;
+  height: 15px;
+  width: 15px;
+  z-index: 1;
+  color: white;
+  border-radius: 50%;
+}
+
+.affirmation-button:active {
+  background-color: #134d71;
+}
+
+.mantra-button {
+  position: fixed;
+  left: 55%;
+  top: 31%;
+  height: 15px;
+  width: 15px;
+  z-index: 1;
+  color: white;
+  border-radius: 50%;
+}
+
+.mantra-button:active {
+  background-color: #134d71;
+}
+
+.receive-message {
+  position: fixed;
+  left: 44%;
+  top: 36%;
+  height: 29px;
+  width: 165px;
+  z-index: 1;
+  text-align: center;
+  background: #134d71;
+  font-size: 15px;
+  color: white;
+  font-family: 'Quicksand', sans-serif;
+  border-radius: 5px;
+}
+
+.mantra-word {
+  position: fixed;
+  font-weight: normal;
+  font-size: 15px;
+  color: black;
+  z-index: 1;
+  left: 57%;
+  top: 29%;
+  font-style: italic;
+}
+
+.affirmation-word {
+  position: fixed;
+  font-weight: normal;
+  font-size: 15px;
+  color: black;
+  z-index: 1;
+  left: 39%;
+  top: 29%;
+  font-style: italic;
 }
