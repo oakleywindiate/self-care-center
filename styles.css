@@ -73,4 +73,6 @@ margin: auto;
 
 svg {
 align-items: center;
+position: relative;
+top: 40px;
 }
