@@ -42,3 +42,7 @@ var mantra = document.querySelector('.mantra-button');
 var receiveMessage = document.querySelector('.receive-message');
 
 // ~~~~~ EVENT LISTENERS HERE ~~~~~ //
+
+affirmation.addEventListener('click', function);
+mantra.addEventListener('click', function);
+receiveMessage.addEventListener('click', function);
