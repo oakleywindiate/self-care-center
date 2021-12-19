@@ -54,6 +54,7 @@ var currentMessage;
 // ~~~~~ QUERY SELECTORS HERE ~~~~~ //
 
 var affirmationButton = document.querySelector('.affirmation-button');
+var mantraButton = document.querySelector('.mantra-button');
 // var mantra = document.querySelector('.mantra-button');
 // var receiveMessage = document.querySelector('.receive-message');
 var displayAffirmation = document.getElementById('display-affirmation');
@@ -61,8 +62,8 @@ var hideIcon = document.querySelector('.meditation-icon');
 
 // ~~~~~ EVENT LISTENERS HERE ~~~~~ //
 
-affirmationButton.addEventListener('click', newMessage);
-// mantra.addEventListener('click', function);
+affirmationButton.addEventListener('click', newAffirmationMessage);
+mantraButton.addEventListener('click', newMantraMessage);
 // receiveMessage.addEventListener('click', function);
 
 // ~~~~~ FUNCTIONS HERE ~~~~~ //
@@ -71,8 +72,13 @@ function randomArray(array) {
   return Math.floor(Math.random() * array.length);
 }
 
-function newMessage() {
+function newAffirmationMessage() {
   displayAffirmation.innerText = affirmations[randomArray(affirmations)];
+  hideMeditationIcon();
+}
+
+function newMantraMessage() {
+  displayAffirmation.innerText = mantras[randomArray(mantras)];
   hideMeditationIcon();
 }
 
