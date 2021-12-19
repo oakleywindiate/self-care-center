@@ -1,4 +1,14 @@
 
+// ~~~~~ CLASS/CONSTRUCTOR HERE ~~~~~ //
+
+class Message {
+  constructor(affirmation, mantra) {
+    this.affirmation = affirmation;
+    this.mantra = mantra;
+  }
+}
+
+
 // ~~~~~ AFFIRMATIONS AND MANTRAS ARRAYS HERE ~~~~~ //
 
 var affirmations = [
@@ -35,43 +45,43 @@ var mantras = [
   "I am the sky, the rest is weather.",
 ];
 
-// ~~~~~ CLASS HERE ~~~~~ //
-
-class Affirmation {
-  constructor(affirmation) {
-    this.affirmation = affirmation;
-  }
-}
-
-// ~~~~~ VARIABLES HERE ~~~~~ //
-
-var currentAffirmation;
 
 // ~~~~~ QUERY SELECTORS HERE ~~~~~ //
 
-var affirmation = document.querySelector('.affirmation-button');
-var mantra = document.querySelector('.mantra-button');
+var affirmationButton = document.querySelector('.affirmation-button');
+var mantraButton = document.querySelector('.mantra-button');
 var receiveMessage = document.querySelector('.receive-message');
-var displayAffirmation = document.querySelector('.display-affirmation');
+var displayAffirmation = document.getElementById('display-affirmation');
+var hideIcon = document.querySelector('.meditation-icon');
 
 // ~~~~~ EVENT LISTENERS HERE ~~~~~ //
 
-affirmation.addEventListener('click', randomAffirmation);
-mantra.addEventListener('click', function);
-receiveMessage.addEventListener('click', function);
+receiveMessage.addEventListener('click', eventReceiveMessage);
 
 // ~~~~~ FUNCTIONS HERE ~~~~~ //
 
-
-function getRandomItem(array) {
+function randomArray(array) {
   return Math.floor(Math.random() * array.length);
-};
-
-function showAffirmation() {
-  currentAffirmation = new Affirmation(affirmation.innerText)
 }
 
-function randomAffirmation() {
-  affirmation.innerText = affirmations[getRandomItem(affirmations)];
-  showAffirmation();
-};
+function newAffirmationMessage() {
+  displayAffirmation.innerText = affirmations[randomArray(affirmations)];
+  hideMeditationIcon();
+}
+
+function newMantraMessage() {
+  displayAffirmation.innerText = mantras[randomArray(mantras)];
+  hideMeditationIcon();
+}
+
+function hideMeditationIcon() {
+  hideIcon.style.display = "none";
+}
+
+function eventReceiveMessage() {
+  if (affirmationButton === true) {
+  return newAffirmationMessage();
+} else {
+  return newMantraMessage();
+}
+}
