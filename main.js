@@ -46,25 +46,17 @@ var mantras = [
 ];
 
 
-// ~~~~~ VARIABLES HERE ~~~~~ //
-
-var currentMessage;
-
-
 // ~~~~~ QUERY SELECTORS HERE ~~~~~ //
 
 var affirmationButton = document.querySelector('.affirmation-button');
 var mantraButton = document.querySelector('.mantra-button');
-// var mantra = document.querySelector('.mantra-button');
-// var receiveMessage = document.querySelector('.receive-message');
+var receiveMessage = document.querySelector('.receive-message');
 var displayAffirmation = document.getElementById('display-affirmation');
 var hideIcon = document.querySelector('.meditation-icon');
 
 // ~~~~~ EVENT LISTENERS HERE ~~~~~ //
 
-affirmationButton.addEventListener('click', newAffirmationMessage);
-mantraButton.addEventListener('click', newMantraMessage);
-// receiveMessage.addEventListener('click', function);
+receiveMessage.addEventListener('click', eventReceiveMessage);
 
 // ~~~~~ FUNCTIONS HERE ~~~~~ //
 
@@ -87,5 +79,9 @@ function hideMeditationIcon() {
 }
 
 function eventReceiveMessage() {
-  displayAffirmation.style.display = "hidden";
+  if (affirmationButton === true) {
+  return newAffirmationMessage();
+} else {
+  return newMantraMessage();
+}
 }
