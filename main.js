@@ -35,20 +35,43 @@ var mantras = [
   "I am the sky, the rest is weather.",
 ];
 
+// ~~~~~ CLASS HERE ~~~~~ //
+
+class Affirmation {
+  constructor(affirmation) {
+    this.affirmation = affirmation;
+  }
+}
+
+// ~~~~~ VARIABLES HERE ~~~~~ //
+
+var currentAffirmation;
+
 // ~~~~~ QUERY SELECTORS HERE ~~~~~ //
 
 var affirmation = document.querySelector('.affirmation-button');
 var mantra = document.querySelector('.mantra-button');
 var receiveMessage = document.querySelector('.receive-message');
+var displayAffirmation = document.querySelector('.display-affirmation');
 
 // ~~~~~ EVENT LISTENERS HERE ~~~~~ //
 
-affirmation.addEventListener('click', function);
+affirmation.addEventListener('click', randomAffirmation);
 mantra.addEventListener('click', function);
 receiveMessage.addEventListener('click', function);
 
 // ~~~~~ FUNCTIONS HERE ~~~~~ //
 
-function getRandomIndex(array) {
+
+function getRandomItem(array) {
   return Math.floor(Math.random() * array.length);
+};
+
+function showAffirmation() {
+  currentAffirmation = new Affirmation(affirmation.innerText)
+}
+
+function randomAffirmation() {
+  affirmation.innerText = affirmations[getRandomItem(affirmations)];
+  showAffirmation();
 };

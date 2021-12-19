@@ -144,3 +144,15 @@ top: 40px;
   top: 29%;
   font-style: italic;
 }
+
+#display-affirmation {
+  postition: relative;
+  font-weight: normal;
+  font-size: 15px;
+  background-color: transparent;
+  border: transparent;
+  z-index: 1;
+  align-items: center;
+  position: relative;
+  top: 180px;
+}
