@@ -85,3 +85,7 @@ function newMantraMessage() {
 function hideMeditationIcon() {
   hideIcon.style.display = "none";
 }
+
+function eventReceiveMessage() {
+  displayAffirmation.style.display = "hidden";
+}
