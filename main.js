@@ -57,6 +57,7 @@ var affirmationButton = document.querySelector('.affirmation-button');
 // var mantra = document.querySelector('.mantra-button');
 // var receiveMessage = document.querySelector('.receive-message');
 var displayAffirmation = document.getElementById('display-affirmation');
+var hideIcon = document.querySelector('.meditation-icon');
 
 // ~~~~~ EVENT LISTENERS HERE ~~~~~ //
 
@@ -72,4 +73,9 @@ function randomArray(array) {
 
 function newMessage() {
   displayAffirmation.innerText = affirmations[randomArray(affirmations)];
+  hideMeditationIcon();
+}
+
+function hideMeditationIcon() {
+  hideIcon.style.display = "none";
 }
