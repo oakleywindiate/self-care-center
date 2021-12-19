@@ -1,4 +1,14 @@
 
+// ~~~~~ CLASS/CONSTRUCTOR HERE ~~~~~ //
+
+class Message {
+  constructor(affirmation, mantra) {
+    this.affirmation = affirmation;
+    this.mantra = mantra;
+  }
+}
+
+
 // ~~~~~ AFFIRMATIONS AND MANTRAS ARRAYS HERE ~~~~~ //
 
 var affirmations = [
@@ -35,43 +45,31 @@ var mantras = [
   "I am the sky, the rest is weather.",
 ];
 
-// ~~~~~ CLASS HERE ~~~~~ //
-
-class Affirmation {
-  constructor(affirmation) {
-    this.affirmation = affirmation;
-  }
-}
 
 // ~~~~~ VARIABLES HERE ~~~~~ //
 
-var currentAffirmation;
+var currentMessage;
+
 
 // ~~~~~ QUERY SELECTORS HERE ~~~~~ //
 
-var affirmation = document.querySelector('.affirmation-button');
-var mantra = document.querySelector('.mantra-button');
-var receiveMessage = document.querySelector('.receive-message');
-var displayAffirmation = document.querySelector('.display-affirmation');
+var affirmationButton = document.querySelector('.affirmation-button');
+// var mantra = document.querySelector('.mantra-button');
+// var receiveMessage = document.querySelector('.receive-message');
+var displayAffirmation = document.getElementById('display-affirmation');
 
 // ~~~~~ EVENT LISTENERS HERE ~~~~~ //
 
-affirmation.addEventListener('click', randomAffirmation);
-mantra.addEventListener('click', function);
-receiveMessage.addEventListener('click', function);
+affirmationButton.addEventListener('click', newMessage);
+// mantra.addEventListener('click', function);
+// receiveMessage.addEventListener('click', function);
 
 // ~~~~~ FUNCTIONS HERE ~~~~~ //
 
-
-function getRandomItem(array) {
+function randomArray(array) {
   return Math.floor(Math.random() * array.length);
-};
-
-function showAffirmation() {
-  currentAffirmation = new Affirmation(affirmation.innerText)
 }
 
-function randomAffirmation() {
-  affirmation.innerText = affirmations[getRandomItem(affirmations)];
-  showAffirmation();
-};
+function newMessage() {
+  displayAffirmation.innerText = affirmations[randomArray(affirmations)];
+}

@@ -148,8 +148,9 @@ top: 40px;
 #display-affirmation {
   postition: relative;
   font-weight: normal;
+  color: white;
   font-size: 15px;
-  background-color: transparent;
+  background-color: black;
   border: transparent;
   z-index: 1;
   align-items: center;
