@@ -45,6 +45,8 @@ var mantras = [
   "I am the sky, the rest is weather.",
 ];
 
+// ~~~~~ VARIABLES HERE ~~~~~ //
+
 
 // ~~~~~ QUERY SELECTORS HERE ~~~~~ //
 
@@ -79,9 +81,13 @@ function hideMeditationIcon() {
 }
 
 function eventReceiveMessage() {
-  if (affirmationButton === true) {
+  if (affirmationButton == true) {
   return newAffirmationMessage();
-} else {
+  } else {
   return newMantraMessage();
+  }
 }
+
+function resetButtons() {
+  
 }
