@@ -1,24 +1,60 @@
 # Self Care Center
+
 ## Overview
-How can I care for myself? One way is with affirmations and mantras!
-Affirmations are thoughts of positive self-empowerment, meant to assert your self-worth.
-Mantras are repetive phrases that are repeated again and again during mindfulness practices. Your challenge is to build an app that helps users remind themselves of their inherent value!
 
-This Solo Challenge gives students and instructors the opportunity to get a pulse on where you are with the foundational concepts of Module 1 curriculum. Students should use this as an opportunity to challenge themselves and work completely independently. Google can (and probably should!) be used, but any other code base should not be referenced. Instructors will be able to use your work, both completion of functionality and code quality, to determine where you stand and if you are behind for this point in the module, provide supports to intervene.
+“Life moves pretty fast. If you don't stop and look around once in a while, you could miss it.”
+ ― Ferris Bueller
 
-The spec for this project can be found [here](https://frontend.turing.io/projects/module-1/self-care-center.html). 
+We could all take a page from Mr. Bueller's rule book. Self-care is an important aspect of everyone's lives. In this busy world we live in, finding the time to take care of ourselves is a precious commodity.
 
-## Learning Goals
+The Self Care Center's purpose is to allow you to easily find motivational mantras and daily affirmations that are quick and fit into your busy life.
 
-- Gain experience building an application that utilizes HTML, CSS and JavaScript
-- Write HTML and CSS to match a provided comp
-- Understand how to listen to and respond to user events
-- Individualize your programming skill set
+Looking for an affirmation to start your day? Simply click the `affirmation` button and choose `Receive Message` to see your affirmation. Are you busy and working through lunch? Take some time to check out our mantras that are here to motivate you and keep you going. Just click `mantra` and then `Receive Message` to see your daily mantra.
 
-## Setup
+### Project Motivation
 
-- Fork this project to your own Github account
-- Clone the repository to your local machine
-- `cd` into the project
-- Read this README thoroughly, then begin working!
+The Self Care Center project aims to teach developers how the DOM works with JavaScript, CSS, and HTML to create functional and interactive websites. This project was completed independently to gauge the level of progress students have made in the program.
 
+
+## Project Information
+#### Code Style & Framework
+* JavaScript
+* HTML
+* CSS
+
+#### Features
+* Display affirmation
+* Display mantra
+
+#### Code Sample
+
+```javascript
+
+function newAffirmationMessage() {
+  displayAffirmation.innerText = affirmations[randomArray(affirmations)];
+  hideMeditationIcon();
+}
+
+function newMantraMessage() {
+  displayAffirmation.innerText = mantras[randomArray(mantras)];
+  hideMeditationIcon();
+}
+```
+
+### Installation
+
+1. To edit this repository:
+  * navigate to repo on `github.com` or use [this link](https://github.com/turingschool-examples/self-care-center)
+  * choose `fork`
+  * `clone` to local machine
+2. `cd` into repository
+3. Open in your text editor
+4. To view webpage, run the command `open index.html` in your terminal
+
+### Credits
+
+This repository was provided by Turing School of Software and Design, a Colorado Non-Profit Organization.
+
+For original repo [click here](https://github.com/turingschool-examples/self-care-center)
+
+Interested in learning more about Turing? [click here](https://turing.edu/)
