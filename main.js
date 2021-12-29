@@ -56,8 +56,16 @@ var receiveMessage = document.querySelector('.receive-message');
 var displayAffirmation = document.getElementById('display-affirmation');
 var hideIcon = document.querySelector('.meditation-icon');
 var name = document.getElementById('welcome-login');
+var loginPage = document.querySelector('.login-page');
+var submitButton = document.querySelector('.submit-button');
+var mainPage = document.querySelector('.main-page');
 
 // ~~~~~ EVENT LISTENERS HERE ~~~~~ //
+
+submitButton.addEventListener('click',function(event) {
+  event.preventDefault();
+  runLogin();
+});
 
 receiveMessage.addEventListener('click', eventReceiveMessage);
 
@@ -90,5 +98,11 @@ function eventReceiveMessage() {
 }
 
 function insertName() {
-  name.value = userName;
+  name.value = `Hello, ${name.value}!`;
+}
+
+function runLogin() {
+  mainPage.classList.toggle("hidden");
+  loginPage.style.display = "none";
+  insertName();
 }

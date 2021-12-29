@@ -189,5 +189,9 @@ top: 40px;
 }
 
 .main-page {
-  display: none;
+  display: block;
+}
+
+.hidden {
+  display: none!important;
 }
