@@ -180,7 +180,7 @@ top: 40px;
 .welcome-login-title {
   color: white;
   position: fixed;
-  left: 39%;
+  left: 37%;
   top: 36%;
 }
 
@@ -194,4 +194,15 @@ top: 40px;
 
 .hidden {
   display: none!important;
+}
+
+.greeting {
+  display: block;
+  position: fixed;
+  color: white;
+  font-size: 22px;
+  font-weight: bold;
+  z-index: 1;
+  left: 45%;
+  top: 15%;
 }
