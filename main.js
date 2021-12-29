@@ -59,6 +59,7 @@ var name = document.getElementById('welcome-login');
 var loginPage = document.querySelector('.login-page');
 var submitButton = document.querySelector('.submit-button');
 var mainPage = document.querySelector('.main-page');
+var displayQuote = document.querySelector('.motivation-quote');
 
 // ~~~~~ EVENT LISTENERS HERE ~~~~~ //
 
@@ -103,6 +104,7 @@ function insertName() {
 
 function runLogin() {
   mainPage.classList.toggle("hidden");
+  displayQuote.classList.toggle("hidden");
   loginPage.style.display = "none";
   insertName();
 }
