@@ -171,3 +171,15 @@ top: 40px;
   font-family: 'Quicksand', sans-serif;
   border-radius: 5px;
 }
+
+.welcome-login-title {
+  color: white;
+}
+
+.login-page {
+  display: block;
+}
+
+.main-page {
+  display: none;
+}
