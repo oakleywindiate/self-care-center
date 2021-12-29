@@ -60,12 +60,14 @@ var loginPage = document.querySelector('.login-page');
 var submitButton = document.querySelector('.submit-button');
 var mainPage = document.querySelector('.main-page');
 var displayQuote = document.querySelector('.motivation-quote');
+var greeting = document.querySelector('.greeting');
 
 // ~~~~~ EVENT LISTENERS HERE ~~~~~ //
 
 submitButton.addEventListener('click',function(event) {
   event.preventDefault();
   runLogin();
+  insertName();
 });
 
 receiveMessage.addEventListener('click', eventReceiveMessage);
@@ -99,12 +101,12 @@ function eventReceiveMessage() {
 }
 
 function insertName() {
-  name.value = `Hello, ${name.value}!`;
+  var name = document.getElementById('welcome-login').value;
+  document.querySelector('.greeting').innerText = "Hello, " + name + "!"
 }
 
 function runLogin() {
   mainPage.classList.toggle("hidden");
   displayQuote.classList.toggle("hidden");
   loginPage.style.display = "none";
-  insertName();
 }
