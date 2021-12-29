@@ -157,3 +157,17 @@ top: 40px;
   position: relative;
   top: 179px;
 }
+
+#welcome-login {
+  border-radius: 10px;
+  outline-color: none;
+}
+
+.submit-button {
+  text-align: center;
+  background: #134d71;
+  font-size: 15px;
+  color: white;
+  font-family: 'Quicksand', sans-serif;
+  border-radius: 5px;
+}
