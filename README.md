@@ -24,8 +24,8 @@ The Self Care Center project aims to teach developers how the DOM works with Jav
 
 #### Features
 * Login Page
-* Display affirmation
-* Display mantra
+* Display Affirmation
+* Display Mantra
 
 #### Code Sample
 
