@@ -146,7 +146,6 @@ top: 40px;
 }
 
 #display-affirmation {
-  postition: relative;
   font-weight: normal;
   color: black;
   font-size: 19px;
@@ -156,4 +155,54 @@ top: 40px;
   align-items: center;
   position: relative;
   top: 179px;
+}
+
+#welcome-login {
+  border-radius: 10px;
+  outline-color: none;
+  position: fixed;
+  left: 44%;
+  top: 45.5%;
+}
+
+.submit-button {
+  text-align: center;
+  background: #134d71;
+  font-size: 15px;
+  color: white;
+  font-family: 'Quicksand', sans-serif;
+  border-radius: 5px;
+  position: fixed;
+  left: 55%;
+  top: 45%;
+}
+
+.welcome-login-title {
+  color: white;
+  position: fixed;
+  left: 37%;
+  top: 36%;
+}
+
+.login-page {
+  display: block;
+}
+
+.main-page {
+  display: block;
+}
+
+.hidden {
+  display: none!important;
+}
+
+.greeting {
+  display: block;
+  position: fixed;
+  color: white;
+  font-size: 22px;
+  font-weight: bold;
+  z-index: 1;
+  left: 45%;
+  top: 15%;
 }
