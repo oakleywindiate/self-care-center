@@ -55,6 +55,7 @@ var mantraButton = document.querySelector('.mantra-button');
 var receiveMessage = document.querySelector('.receive-message');
 var displayAffirmation = document.getElementById('display-affirmation');
 var hideIcon = document.querySelector('.meditation-icon');
+var name = document.getElementById('welcome-login');
 
 // ~~~~~ EVENT LISTENERS HERE ~~~~~ //
 
@@ -88,6 +89,6 @@ function eventReceiveMessage() {
   }
 }
 
-function resetButtons() {
-  
+function insertName() {
+  name.value = userName;
 }
