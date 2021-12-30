@@ -7,9 +7,9 @@
 
 We could all take a page from Mr. Bueller's rule book. Self-care is an important aspect of everyone's lives. In this busy world we live in, finding the time to take care of ourselves is a precious commodity.
 
-The Self Care Center's purpose is to allow you to easily find motivational mantras and daily affirmations that are quick and fit into your busy life.
+The Self Care Center's mission is to provide motivational mantras and daily affirmations that are quick and fit into your busy life.
 
-Looking for an affirmation to start your day? Simply click the `affirmation` button and choose `Receive Message` to see your affirmation. Are you busy and working through lunch? Take some time to check out our mantras that are here to motivate you and keep you going. Just click `mantra` and then `Receive Message` to see your daily mantra.
+Are you looking for an affirmation to start your day? Simply select the `affirmation` button and then click `Receive Message` to see your affirmation. Are you busy and working through lunch? Just select the `mantra` button and then click `Receive Message` to see your motivational mantra.
 
 ### Project Motivation
 
@@ -31,14 +31,13 @@ The Self Care Center project aims to teach developers how the DOM works with Jav
 
 ```javascript
 
-function newAffirmationMessage() {
-  displayAffirmation.innerText = affirmations[randomArray(affirmations)];
-  hideMeditationIcon();
-}
-
-function newMantraMessage() {
-  displayAffirmation.innerText = mantras[randomArray(mantras)];
-  hideMeditationIcon();
+function insertName() {
+  var name = document.getElementById('welcome-login').value;
+  if (name === '') {
+    document.querySelector('.greeting').innerText = "Hello, Friend!"
+  } else {
+  document.querySelector('.greeting').innerText = "Hello, " + name + "!"
+  }
 }
 ```
 
