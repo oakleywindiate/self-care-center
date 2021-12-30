@@ -1,14 +1,4 @@
 
-// ~~~~~ CLASS/CONSTRUCTOR HERE ~~~~~ //
-
-class Message {
-  constructor(affirmation, mantra) {
-    this.affirmation = affirmation;
-    this.mantra = mantra;
-  }
-}
-
-
 // ~~~~~ AFFIRMATIONS AND MANTRAS ARRAYS HERE ~~~~~ //
 
 var affirmations = [
