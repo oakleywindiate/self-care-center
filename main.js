@@ -35,8 +35,6 @@ var mantras = [
   "I am the sky, the rest is weather.",
 ];
 
-// ~~~~~ VARIABLES HERE ~~~~~ //
-
 
 // ~~~~~ QUERY SELECTORS HERE ~~~~~ //
 
@@ -52,6 +50,7 @@ var mainPage = document.querySelector('.main-page');
 var displayQuote = document.querySelector('.motivation-quote');
 var greeting = document.querySelector('.greeting');
 
+
 // ~~~~~ EVENT LISTENERS HERE ~~~~~ //
 
 submitButton.addEventListener('click',function(event) {
@@ -61,6 +60,7 @@ submitButton.addEventListener('click',function(event) {
 });
 
 receiveMessage.addEventListener('click', eventReceiveMessage);
+
 
 // ~~~~~ FUNCTIONS HERE ~~~~~ //
 
@@ -98,7 +98,6 @@ function insertName() {
   document.querySelector('.greeting').innerText = "Hello, " + name + "!"
   }
 }
-
 
 function runLogin() {
   mainPage.classList.toggle("hidden");
