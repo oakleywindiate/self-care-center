@@ -102,8 +102,13 @@ function eventReceiveMessage() {
 
 function insertName() {
   var name = document.getElementById('welcome-login').value;
+  if (name === '') {
+    document.querySelector('.greeting').innerText = "Hello, Friend!"
+  } else {
   document.querySelector('.greeting').innerText = "Hello, " + name + "!"
+  }
 }
+
 
 function runLogin() {
   mainPage.classList.toggle("hidden");
